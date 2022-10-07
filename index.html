@@ -26,16 +26,17 @@
         <ol>
             <li>Introduction of TA</li>
             <li>Self-introduction of group members</li>
-            <ul>
-                <li>name, grade, major</li>
-                <li>interests</li>
-                <li>reasons for taking this course</li>
-            </ul>
             <li>Q&A section</li>
         </ol>
+        <p>For self-introduction, you should include your: </p>
+        <ul>
+            <li>name, grade, major</li>
+            <li>interests</li>
+            <li>reasons for taking this course</li>
+        </ul>
     </section>
     </main>
-    <img src="https://octodex.github.com/images/minion.png" width="180" height="200">
+    <img src="https://octodex.github.com/images/minion.png" alt="Image" width="180" height="200">
     <hr>
     <p>This is the audio: <audio src="./song.m4a" controls></audio></p>
     <p>This is the video: <video src="./video.mp4" controls></video></p>
@@ -51,10 +52,10 @@
         </details>
         <form>
             <label for="name">Name: </label>
-            <input type="text">
+            <input type="text" id="name">
             <br>
             <label for="gender">Gender: </label>
-            <input list="genders" id="gender" name="gender"/>
+            <input list="genders" id="gender" name="gender">
             <datalist id="genders">
                 <option value="Male"></option>
                 <option value="Female"></option>
@@ -74,26 +75,26 @@
                 <p>Do you have a valid "Green Thumb"?</p>
                 <input type="radio" id="yes" name="validity" value="Yes">
                 <label for="yes">Yes</label>
-                <input type="radio" id="yes" name="validity" value="No">
+                <input type="radio" id="no" name="validity" value="No">
                 <label for="no">No</label>
             </fieldset>
             <fieldset>
                 <p>Languages you have learned: </p>
-                <input type="checkbox">
+                <input type="checkbox" id="c" name="language" value="C">
                 <label for="c">C</label>
-                <input type="checkbox">
+                <input type="checkbox" id="java" name="language" value="Java">
                 <label for="java">Java</label>
-                <input type="checkbox">
+                <input type="checkbox" id="c++" name="language" value="C++">
                 <label for="c++">C++</label>
-                <input type="checkbox">
+                <input type="checkbox" id="python" name="language" value="Python">
                 <label for="python">Python</label>
             </fieldset>
             <label for="comments">Comments for today's meeting:</label>
             <br>
             <textarea id="comments" name="comments" rows="10" cols="50">Today's meeting is very useful......</textarea>
             <div>
-                <label for="date">Date: </label>
-                <input type="date" value="2022-10-06" min="2022-10-01" max="2022-10-30">
+                <label for="Date">Date: </label>
+                <input type="date" id="Date" name="Date" value="2022-10-06" min="2022-10-01" max="2022-10-30">
                 <input type="button" value="Save all results">
             </div>
         </form>
