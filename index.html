@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSE110 First Meeting</title>
+    <meta name="author" content="Ruoqian Huang">
+    <link rel="icon" href="https://octodex.github.com/images/minion.png">
+  </head>
+  <body>
+    <main>
+    <header>
+    <h1>CSE110 First Meeting</h1>
+    <h2>Getting to know your group members</h2>
+    <h3>Oct 6th, 2022</h3>
+    <h4>Recorded by Ruoqian Huang</h4>
+    </header>
+    <hr>
+    <section>
+        <h4>Attendence:</h4>
+        <p>A, B, C, E</p>
+        <p><i>*D did not attend due to COVID</i></p>
+        <p>**<strong>Important:</strong> We have <b>3</b> students diagonosed with COVID this week. <em>Be sure to wear a mask!</em></p>
+    </section>
+    <hr>
+    <section>
+        <h4>Agenda:</h4>
+        <ol>
+            <li>Introduction of TA</li>
+            <li>Self-introduction of group members</li>
+            <ul>
+                <li>name, grade, major</li>
+                <li>interests</li>
+                <li>reasons for taking this course</li>
+            </ul>
+            <li>Q&A section</li>
+        </ol>
+    </section>
+    </main>
+    <img src="https://octodex.github.com/images/minion.png" width="180" height="200">
+    <hr>
+    <p>This is the audio: <audio src="./song.m4a" controls></audio></p>
+    <p>This is the video: <video src="./video.mp4" controls></video></p>
+    <nav>
+    <a href="https://www.youtube.com/watch?v=4duPBWzf46E">Original website</a>
+    </nav>
+    <hr>
+    <section>
+        <h4>Forms:</h4>
+        <details>
+            <summary>Note</summary>
+            This is for HTML practice, <span style="color:red">not</span> a part of the meeting minutes.
+        </details>
+        <form>
+            <label for="name">Name: </label>
+            <input type="text">
+            <br>
+            <label for="gender">Gender: </label>
+            <input list="genders" id="gender" name="gender"/>
+            <datalist id="genders">
+                <option value="Male"></option>
+                <option value="Female"></option>
+                <option value="Other"></option>
+            </datalist>
+            
+            <fieldset>
+            <label for="grades">Choose a grade:</label>
+            <select id="grades" name="grades">
+                <option value="freshman">Freshman</option>
+                <option value="sophomore">Sophomore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+            </select>
+            </fieldset>
+            <fieldset>
+                <p>Do you have a valid "Green Thumb"?</p>
+                <input type="radio" id="yes" name="validity" value="Yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="validity" value="No">
+                <label for="no">No</label>
+            </fieldset>
+            <fieldset>
+                <p>Languages you have learned: </p>
+                <input type="checkbox">
+                <label for="c">C</label>
+                <input type="checkbox">
+                <label for="java">Java</label>
+                <input type="checkbox">
+                <label for="c++">C++</label>
+                <input type="checkbox">
+                <label for="python">Python</label>
+            </fieldset>
+            <label for="comments">Comments for today's meeting:</label>
+            <br>
+            <textarea id="comments" name="comments" rows="10" cols="50">Today's meeting is very useful......</textarea>
+            <div>
+                <label for="date">Date: </label>
+                <input type="date" value="2022-10-06" min="2022-10-01" max="2022-10-30">
+                <input type="button" value="Save all results">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p><i>end of page</i></p>
+    </footer>
+  </body>
+</html>
