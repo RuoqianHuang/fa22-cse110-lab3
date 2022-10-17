@@ -4,6 +4,8 @@
     <title>CSE110 First Meeting</title>
     <meta name="author" content="Ruoqian Huang">
     <link rel="icon" href="https://octodex.github.com/images/minion.png">
+    <link rel="stylesheet" href="externalCSS.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
   </head>
   <body>
     <main>
@@ -16,8 +18,22 @@
     <hr>
     <section>
         <h4>Attendence:</h4>
-        <p>A, B, C, E</p>
-        <p><i>*D did not attend due to COVID</i></p>
+        <div class="flex">
+            <div>Amy</div>
+            <div>Bella</div>
+            <div>Cathy</div>  
+            <div>Ellen</div> 
+        </div>
+        <p><i>*Daniel did not attend due to COVID</i></p>
+        <p>Please sit in the assigned seat: </p>
+        <div class="seats">
+            <div class="item">Amy</div>
+            <div class="item">Cathy</div>
+            <div class="item">Bella</div>  
+            <div class="item">Ellen</div>
+            <div class="item">Daniel</div>
+            <div class="item">Empty seat</div>  
+        </div>
         <p>**<strong>Important:</strong> We have <b>3</b> students diagonosed with COVID this week. <em>Be sure to wear a mask!</em></p>
     </section>
     <hr>
@@ -38,17 +54,17 @@
     </main>
     <img src="https://octodex.github.com/images/minion.png" alt="Image" width="180" height="200">
     <hr>
-    <p>This is the audio: <audio src="./song.m4a" controls></audio></p>
-    <p>This is the video: <video src="./video.mp4" controls></video></p>
+    <p id="aud">This is the audio: <audio src="./song.m4a" controls></audio></p>
+    <p id="vid">This is the video: <video src="./video.mp4" controls></video></p>
     <nav>
-    <a href="https://www.youtube.com/watch?v=4duPBWzf46E">Original website</a>
+    <a href="https://www.youtube.com/watch?v=4duPBWzf46E" target="site">Original website</a>
     </nav>
     <hr>
     <section>
         <h4>Forms:</h4>
         <details>
             <summary>Note</summary>
-            This is for HTML practice, <span>not</span> a part of the meeting minutes.
+            This is for HTML practice, <span style="color:red">not</span> a part of the meeting minutes.
         </details>
         <form>
             <label for="name">Name: </label>
@@ -72,14 +88,14 @@
             </select>
             </fieldset>
             <fieldset>
-                <p>Do you have a valid "Green Thumb"?</p>
+                <p class="question">Do you have a valid "Green Thumb"?</p>
                 <input type="radio" id="yes" name="validity" value="Yes">
                 <label for="yes">Yes</label>
                 <input type="radio" id="no" name="validity" value="No">
                 <label for="no">No</label>
             </fieldset>
             <fieldset>
-                <p>Languages you have learned: </p>
+                <p class="question">Languages you have learned: </p>
                 <input type="checkbox" id="c" name="language" value="C">
                 <label for="c">C</label>
                 <input type="checkbox" id="java" name="language" value="Java">
@@ -99,6 +115,21 @@
             </div>
         </form>
     </section>
+    <p>Courses taken: </p>
+    <div class="prerequisites">
+        <p>CSE 11</p>
+        <p>CSE 12</p>
+        <p class="prerequisites">CSE 100 (favourite course)</p>
+    </div>
+    <p>Available classroom (highlighted): </p>
+    <h5>
+        <p>EBU 250A</p>
+        <section>
+            <p>WLH 2001</p>
+        </section>
+        <p>WLH 2005</p>
+    </h5>
+    <p>Changes may occur</p>
     <footer>
         <p><i>end of page</i></p>
     </footer>
